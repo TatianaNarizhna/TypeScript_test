@@ -70,7 +70,7 @@ let active: "start" | "end";
 active = "start";
 
 const fruit: string[] = [];
-function workWithArr(arr, value: string, action: "add" | "delete") {
+function workWithArr(arr: any, value: string, action: "add" | "delete") {
   if (action === "add") {
     arr.push(value);
   } else {
@@ -119,7 +119,7 @@ foo = () => {};
 
 let foo2: (param: number) => void;
 foo2 = (param: number) => {
-  console.log("some number");
+  console.log(param, "some number");
 };
 
 function culc(
@@ -206,8 +206,8 @@ let variable: string | number;
 
 let literal: "enable" | "disable";
 
-function showMessage(message): void {
-  console.log(message);
+function showMessage(message5: any): void {
+  console.log(message5);
 }
 
 function calc(num1: number, num2: number): number {
